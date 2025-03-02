@@ -19,7 +19,7 @@ const staffMembers = [
     id: 2,
     name: "RORO",
     role: "Owner",
-    avatar: "https://media.discordapp.net/attachments/1057671276551995414/1345832648538329181/imresizer-1740064093169.png?ex=67c5fbd3&is=67c4aa53&hm=df3d8c8ac226ed90e99d0ebda423cb9148b5b370374fdd8e1ecbe9b12df632dc&=&format=webp&quality=lossless&width=723&height=904",
+    avatar: "https://media.discordapp.net/attachments/1057671276551995414/1345841569340588123/image.png?ex=67c60422&is=67c4b2a2&hm=40c0a0ce6a73602d21a882e8290d9aed7227d498d17b09693622cd153d2af36e&=&format=webp&quality=lossless&width=137&height=133",
     description: "Owner with extensive management capabilities and oversight."
   },
   {
@@ -41,6 +41,20 @@ const staffMembers = [
     name: "Lex",
     role: "Developer",
     avatar: "https://cdn.discordapp.com/avatars/510705890287026178/ad4f45330a6721b9d93af43e9ed3de2c.png?size=4096&format=webp&quality=lossless&width=461&height=461",
+    description: "Developer responsible for creating and maintaining game features."
+  },
+  {
+    id: 5,
+    name: "Vinayak",
+    role: "Developer",
+    avatar: "https://cdn.discordapp.com/avatars/552701955999268894/62da76228716195867ce186d4493c96b.png?size=4096&format=webp&quality=lossless&width=461&height=461",
+    description: "Developer responsible for creating and maintaining game features."
+  },
+  {
+    id: 5,
+    name: "Skyaimer",
+    role: "Developer",
+    avatar: "https://cdn.discordapp.com/avatars/512551029326217216/e2bfc51a0595f666d02a85c9f67b3f2e.png?size=4096&format=webp&quality=lossless&width=461&height=461",
     description: "Developer responsible for creating and maintaining game features."
   },
   {
@@ -251,7 +265,7 @@ const AboutUs = () => {
                 ></div>
 
                 <div className="p-6 text-center relative z-10">
-                  <Avatar className="w-28 h-28 mx-auto mb-4">
+                  <Avatar className="w-24 h-24 mx-auto mb-4">
                     <img src={member.avatar} alt={member.name} />
                   </Avatar>
 
