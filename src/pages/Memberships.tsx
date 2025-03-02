@@ -17,10 +17,9 @@ const membershipTiers = [
     features: [
       "1x PDM under 100k",
       "1x Tier 1 EDM",
-      "1x EDM Bike",
       "50k In Game Money",
       "Custom Phone Number 7 Digits",
-      "Discord Role"
+      "Exclusive Discord Role"
     ],
     recommended: false
   },
@@ -33,13 +32,15 @@ const membershipTiers = [
     description: "Enhanced features for serious players",
     color: "purple",
     features: [
-      "2x EDM Bike",
       "1x Tier 1 EDM",
       "1x Tier 2 EDM",
-      "75k In Game Money",
-      "Custom Phone Number 6 Digits",
-      "Level 4 Queue Prio",
-      "Discord Role"
+      "75K In-Game Money",
+      "1x PDM Vehicle (Under 150K)",
+      "Tier 1 House",
+      "Custom 6-Digit Phone Number",
+      "1x Custom 6-Digit License Plate",
+      "Level 4 Queue Priority",
+      "Exclusive Discord Role"
     ],
     recommended: false
   },
@@ -52,14 +53,16 @@ const membershipTiers = [
     description: "Premium experience with exclusive features",
     color: "purple",
     features: [
-      "3x EDM Bike",
       "2x Tier 1 EDM",
       "1x Tier 2 EDM",
-      "150k In Game Money",
-      "1x Tier 3 EDM",
-      "Custom Phone Number 5 Digits",
-      "Level 3 Queue Prio",
-      "Discord Role"
+      "1x EDM Bike",
+      "150K In-Game Money",
+      "1 PDM under 200k",
+      "Tier 2 House",
+      "Custom 5-Digit Phone Number",
+      "2x Custom 5-Digit License Plates",
+      "Level 3 Queue Priority",
+      "Exclusive Discord Role"
     ],
     recommended: false
   },
@@ -72,16 +75,18 @@ const membershipTiers = [
     description: "Legendary status with high-tier benefits",
     color: "gold",
     features: [
-      "4x EDM Bike",
+      "1x Tier 3 EDM",
       "3x Tier 1 EDM",
       "2x Tier 2 EDM",
-      "200k In Game Money",
-      "1x Exclusive EDM",
-      "Custom Phone Number 4 Digits",
-      "1/1 EDM",
-      "1x Custom No. Plate 6 Digits",
-      "Discord Role",
-      "Tier 1 House"
+      "2x EDM Bike",
+      "200K In-Game Money",
+      "Tier 3 House",
+      "Custom 4-Digit Phone Number",
+      "4x Custom 4-Digit License Plates",
+      "Custom Storage (500kg)",
+      "Heli Access (1 Month)",
+      "Level 2 Queue Priority",
+      "Exclusive Discord Role"
     ],
     recommended: true
   },
@@ -94,17 +99,21 @@ const membershipTiers = [
     description: "Supreme membership for the dedicated elite",
     color: "gold",
     features: [
+      "1x Exclusive EDM",
+      "2x Tier 3 EDM",
       "4x Tier 1 EDM",
       "3x Tier 2 EDM",
-      "250k In Game Money",
-      "2x Exclusive EDM",
-      "Custom Phone Number 3 Digits",
-      "1 PDM under 150k",
-      "2x Custom No. Plate 5 Digits",
-      "Tier 2 House",
-      "Level 2 Queue Prio",
+      "3x EDM Bike",
+      "250K In-Game Money",
+      "Tier 1 Mansion",
+      "Custom 3-Digit Phone Number",
+      "8x Custom 3-Digit License Plates",
       "1x Custom Livery",
-      "Heli Access (1 Months)"
+      "Custom Storage (1000kg)",
+      "Heli Access (3 Months)",
+      "Yacht Access (1 Month)",
+      "Level 1 Queue Priority",
+      "Exclusive Discord Role"
     ],
     recommended: false
   },
@@ -117,20 +126,22 @@ const membershipTiers = [
     description: "Ultimate overlord status with exclusive access",
     color: "gold",
     features: [
+      "1x 1/1 EDM",
+      "2x Exclusive EDM",
+      "3x Tier 3 EDM",
       "5x Tier 1 EDM",
       "4x Tier 2 EDM",
-      "3x Tier 3 EDM",
-      "300k In Game Money",
-      "4x Custom No. Plate 4 Digits",
-      "Custom Phone Number 2 Digits",
-      "Tier 3 House",
-      "8x Custom No. Plate 3 Digits",
-      "10x Custom No. Plate 2 Digits",
-      "Custom Storage 2000kg",
-      "Level 1 Queue Prio",
-      "Direct Entry Prio",
+      "4x EDM Bike",
+      "300K In-Game Money",
+      "Tier 2 Mansion",
+      "Custom 2-Digit Phone Number",
+      "10x Custom 2-Digit License Plates",
+      "2x Custom Livery",
+      "Custom Storage (2000kg)",
       "Heli Access",
-      "Yacht Access"
+      "Yacht Access",
+      "Direct Entry Priority",
+      "Exclusive Discord Role"
     ],
     recommended: false
   }
@@ -148,13 +159,13 @@ const Memberships = () => {
         }, 200);
       });
     }, 3000);
-    
+
     return () => clearInterval(interval);
   }, []);
 
   // Function to get color values based on tier color
   const getColorValues = (color) => {
-    switch(color) {
+    switch (color) {
       case 'gold':
         return {
           primary: '#FFD700',
@@ -187,52 +198,55 @@ const Memberships = () => {
         };
     }
   };
-
+  // Default color for most elements
+  const mainColor = getColorValues('blue');
+  const accentColor = getColorValues('purple');
   return (
+
     <div className="min-h-screen bg-black text-white overflow-hidden">
       <Navbar />
-      
+
       {/* Background elements */}
       <div className="absolute inset-0 z-0">
         {/* Cyberpunk grid */}
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-b from-purple-900/10 via-cyan-900/5 to-black"></div>
-          
+
           {/* Horizontal grid lines */}
           <div className="absolute inset-0">
             {[...Array(20)].map((_, i) => (
-              <div 
-                key={`h-${i}`} 
-                className="absolute h-px w-full bg-cyan-500/10" 
+              <div
+                key={`h-${i}`}
+                className="absolute h-px w-full bg-cyan-500/10"
                 style={{ top: `${i * 5}%` }}
               />
             ))}
           </div>
-          
+
           {/* Vertical grid lines */}
           <div className="absolute inset-0">
             {[...Array(20)].map((_, i) => (
-              <div 
-                key={`v-${i}`} 
-                className="absolute w-px h-full bg-purple-500/10" 
+              <div
+                key={`v-${i}`}
+                className="absolute w-px h-full bg-purple-500/10"
                 style={{ left: `${i * 5}%` }}
               />
             ))}
           </div>
         </div>
-        
+
         {/* Cyber circles */}
         <div className="absolute top-1/4 left-0 w-96 h-96 rounded-full bg-purple-500/5 blur-3xl"></div>
         <div className="absolute bottom-1/4 right-0 w-80 h-80 rounded-full bg-cyan-500/5 blur-3xl"></div>
       </div>
-      
+
       {/* Digital scanline effect */}
       <div className="absolute inset-0 pointer-events-none z-0 bg-scanline opacity-10"></div>
-      
+
       <div className="relative z-10 pt-24 pb-16 px-4 md:px-8">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
-          <motion.div 
+          <motion.div
             className="text-center mb-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -257,9 +271,9 @@ const Memberships = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {membershipTiers.map((tier, index) => {
               const colors = getColorValues(tier.color);
-              
+
               return (
-                <motion.div 
+                <motion.div
                   key={tier.id}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -268,27 +282,27 @@ const Memberships = () => {
                 >
                   <Card className="relative h-full flex flex-col overflow-hidden bg-gray-900/80 backdrop-blur-sm border border-gray-800 hover:border-gray-700 transition-all duration-300">
                     {/* Gradient top border based on tier color */}
-                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#00F0FF]/80 to-transparent" 
+                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#00F0FF]/80 to-transparent"
                       style={{
                         background: `linear-gradient(90deg, transparent, ${colors.primary}80, transparent)`
                       }}
                     ></div>
-                    
+
                     {/* Recommended badge */}
                     {tier.recommended && (
                       <div className="absolute top-0 right-0 bg-[#FFD700] text-black font-bold text-xs px-4 py-1 transform translate-x-8 translate-y-4 rotate-45 shadow-lg z-20">
                         BEST VALUE
                       </div>
                     )}
-                    
+
                     {/* Background glow effect for cards */}
-                    <div 
-                      className="absolute inset-0 opacity-10 z-0" 
+                    <div
+                      className="absolute inset-0 opacity-10 z-0"
                       style={{
                         background: `radial-gradient(circle at center, ${colors.primary}30 0%, transparent 70%)`
                       }}
                     ></div>
-                    
+
                     <div className={`p-6 border-b border-gray-800 relative z-10`}>
                       <h3 className={`text-2xl font-bold mb-2 ${colors.text}`}>
                         {tier.title}
@@ -301,7 +315,7 @@ const Memberships = () => {
                       </div>
                       <p className="text-gray-300 mt-2">{tier.description}</p>
                     </div>
-                    
+
                     <div className="p-6 flex-grow relative z-10">
                       <h4 className="text-sm uppercase tracking-wider text-gray-400 mb-4 font-bold">Features</h4>
                       <ul className="space-y-3">
@@ -313,25 +327,27 @@ const Memberships = () => {
                         ))}
                       </ul>
                     </div>
-                    
+
                     <div className="p-6 mt-auto relative z-10">
-                      <button
-                        className={`w-full py-3 px-6 rounded font-bold tracking-wide transition-all duration-300 
+                      <a href="https://discord.com/channels/1048253749321281566/1343927790436876348" target="_blank">
+                        <button
+                          className={`w-full py-3 px-6 rounded font-bold tracking-wide transition-all duration-300 
                           ${colors.buttonText} flex items-center justify-center overflow-hidden relative`}
-                        style={{
-                          backgroundColor: colors.primary,
-                          boxShadow: colors.shadow
-                        }}
-                      >
-                        <span className="relative z-10">SELECT {tier.title.toUpperCase()}</span>
-                        <span 
-                          className="absolute inset-0 opacity-0 hover:opacity-30 transition-opacity duration-300"
                           style={{
-                            background: `linear-gradient(90deg, ${colors.primary}, ${colors.hover})`
+                            backgroundColor: colors.primary,
+                            boxShadow: colors.shadow
                           }}
-                        ></span>
-                        <ArrowRight className="inline ml-2 h-5 w-5" />
-                      </button>
+                        >
+                          <span className="relative z-10">SELECT {tier.title.toUpperCase()}</span>
+                          <span
+                            className="absolute inset-0 opacity-0 hover:opacity-30 transition-opacity duration-300"
+                            style={{
+                              background: `linear-gradient(90deg, ${colors.primary}, ${colors.hover})`
+                            }}
+                          ></span>
+                          <ArrowRight className="inline ml-2 h-5 w-5" />
+                        </button>
+                      </a>
                     </div>
                   </Card>
                 </motion.div>
@@ -340,7 +356,7 @@ const Memberships = () => {
           </div>
 
           {/* FAQ Section */}
-          <motion.div 
+          <motion.div
             className="max-w-3xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -349,21 +365,21 @@ const Memberships = () => {
             <h2 className="text-3xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">
               Frequently Asked Questions
             </h2>
-            
+
             <div className="space-y-6">
               {[
                 {
-                  question: "What are EDM vehicles?",
-                  answer: "EDM (Exclusive Donor Motors) vehicles are special cars only available to members. They come in different tiers with Tier 1 being standard models, while higher tiers offer enhanced performance and exclusive customization options."
+                  "question": "How do I book a membership?",
+                  "answer": "Join our Discord, go to the ticket support section, and open a ticket to proceed with membership booking."
                 },
                 {
-                  question: "How does queue priority work?",
-                  answer: "Queue priority allows you to bypass waiting times when logging into the server. Higher membership tiers provide better queue positions, with Level 1 offering the fastest server entry experience possible."
+                  "question": "Are there streamer perks?",
+                  "answer": "Yes! Open a ticket in our Discord to learn more about exclusive streamer perks."
                 },
                 {
-                  question: "What are custom number plates?",
-                  answer: "Custom number plates allow you to personalize your vehicles with unique identification plates. The digit number refers to how many characters you can customize, with lower digits offering more exclusive customization options."
-                }
+                  "question": "What is a One-on-One Car?",
+                  "answer": "A One-on-One Car is a unique vehicle exclusively available to a single player. To inquire about getting one, open a ticket in our Discord."
+                },
               ].map((faq, index) => (
                 <motion.div
                   key={index}
@@ -385,10 +401,57 @@ const Memberships = () => {
                 </motion.div>
               ))}
             </div>
+
+
+            {/* CTA Section */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.0 }}
+              className="flex justify-center mt-12"
+            >
+              <Card className="bg-gray-900/80 backdrop-blur-sm border border-gray-800 p-8 text-center relative overflow-hidden w-full max-w-2xl">
+                {/* Gradient border */}
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#00F0FF]/80 to-transparent"></div>
+
+                {/* Background glow */}
+                <div className="absolute inset-0 opacity-10 z-0"
+                  style={{
+                    background: `radial-gradient(circle at center, ${mainColor.primary}30 0%, transparent 70%)`
+                  }}
+                ></div>
+
+                <div className="relative z-10">
+                  <h2 className="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-600">
+                    JOIN OUR COMMUNITY
+                  </h2>
+
+                  <p className="text-gray-300 text-lg max-w-3xl mx-auto mb-6">
+                    Ready to experience the best roleplaying server in India? Join our Discord community and start your adventure today!
+                  </p>
+
+                  <button
+                    className="py-3 px-8 rounded font-bold tracking-wide transition-all duration-300 flex items-center justify-center mx-auto"
+                    style={{
+                      backgroundColor: mainColor.primary,
+                      color: 'black',
+                      boxShadow: mainColor.shadow
+                    }}
+                  >
+                    <a className="relative z-10"
+                      href="https://discord.gg/4SBd3S4Fcd"
+                      target="_blank"
+                      rel="noopener noreferrer"
+
+                    >JOIN DISCORD </a>
+                  </button>
+                </div>
+              </Card>
+            </motion.div>
           </motion.div>
         </div>
       </div>
-      
+
       {/* CSS for cyberpunk elements */}
       <style>{`
         /* Scanline effect */

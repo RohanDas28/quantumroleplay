@@ -14,10 +14,10 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: <MessageSquare className="w-5 h-5" />, url: "https://discord.gg/quantumrp", name: "Discord" },
-    { icon: <Twitter className="w-5 h-5" />, url: "https://twitter.com", name: "Twitter" },
-    { icon: <Instagram className="w-5 h-5" />, url: "https://instagram.com", name: "Instagram" },
-    { icon: <Youtube className="w-5 h-5" />, url: "https://youtube.com", name: "YouTube" }
+    // { icon: <MessageSquare className="w-5 h-5" />, url: "https://discord.gg/4SBd3S4Fcd", name: "Discord" },
+    // { icon: <Twitter className="w-5 h-5" />, url: "https://twitter.com", name: "Twitter" },
+    // { icon: <Instagram className="w-5 h-5" />, url: "https://instagram.com", name: "Instagram" },
+    // { icon: <Youtube className="w-5 h-5" />, url: "https://youtube.com", name: "YouTube" }
   ];
 
   const navLinks = [
@@ -103,7 +103,7 @@ const Footer = () => {
                 Join Server <ChevronRight className="w-4 h-4 ml-1" />
               </a>
               <a 
-                href="https://discord.gg/quantumrp"
+                href="https://discord.gg/4SBd3S4Fcd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cyberpunk-button purple text-sm flex items-center justify-center"

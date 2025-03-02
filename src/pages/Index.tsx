@@ -84,7 +84,7 @@ const Index = () => {
             </h1>
 
             <h2 className="text-xl md:text-2xl font-light mb-8 text-gray-300 tracking-wide">
-              Your Ultimate RP Experience in a Cyberpunk Universe
+                Where Dreams Become Reality!
             </h2>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10">
@@ -149,34 +149,34 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Immersive Roleplay",
-                desc: "Dive into a living, breathing cyberpunk world with deep storylines and character development.",
-                icon: "🎭"
+                "title": "Supportive Roleplay",
+                "desc": "Engage in immersive roleplay, whether you're a seasoned player or new to FiveM/GTA V.",
+                "icon": "🎭"
               },
               {
-                title: "Custom Economy",
-                desc: "Participate in a player-driven economy with unique jobs, businesses, and criminal activities.",
-                icon: "💰"
+                "title": "Supportive Economy",
+                "desc": "Thrive in a balanced economy with jobs, businesses, and opportunities for all players.",
+                "icon": "💰"
               },
               {
-                title: "Faction Warfare",
-                desc: "Join corporations, gangs, or rebel groups and fight for control of the city.",
-                icon: "⚔️"
+                "title": "Gangs & Crews",
+                "desc": "Form alliances, build reputations, and dominate the streets with your crew.",
+                "icon": "⚔️"
               },
               {
-                title: "Cutting-Edge Tech",
-                desc: "Utilize cybernetic implants, hacking tools, and futuristic weapons.",
-                icon: "🔧"
+                "title": "Races",
+                "desc": "Compete in high-speed street races and climb the ranks of the underground racing scene.",
+                "icon": "🏁"
               },
               {
-                title: "Active Community",
-                desc: "Join a thriving community of roleplayers with regular events and updates.",
-                icon: "👥"
+                "title": "Active Community",
+                "desc": "Be part of a welcoming and engaging community with frequent interactions and support.",
+                "icon": "👥"
               },
               {
-                title: "Custom Content",
-                desc: "Experience unique vehicles, weapons, and locations not found on other servers.",
-                icon: "✨"
+                "title": "Community Events",
+                "desc": "Join exciting events, competitions, and roleplay-driven activities hosted regularly.",
+                "icon": "✨"
               }
             ].map((feature, index) => (
               <motion.div
@@ -233,7 +233,7 @@ const Index = () => {
                 <span className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 opacity-0 hover:opacity-30 transition-opacity duration-300"></span>
               </motion.a>
               <motion.a
-                href="https://discord.gg/quantumrp"
+                href="https://discord.gg/4SBd3S4Fcd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="neon-button purple px-8 py-4 text-lg relative overflow-hidden"
