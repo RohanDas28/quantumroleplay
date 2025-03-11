@@ -19,14 +19,14 @@ const staffMembers = [
     id: 2,
     name: "RORO",
     role: "Owner",
-    avatar: "https://media.discordapp.net/attachments/1057671276551995414/1345841569340588123/image.png?ex=67c60422&is=67c4b2a2&hm=40c0a0ce6a73602d21a882e8290d9aed7227d498d17b09693622cd153d2af36e&=&format=webp&quality=lossless&width=137&height=133",
+    avatar: "https://media.discordapp.net/attachments/1057671276551995414/1345841569340588123/image.png?ex=67d138e2&is=67cfe762&hm=fe0d243c76d369452cf67e544b85fcdbb49ca0ef4a90c606ce0d33ecca3c09a2&=&format=webp&quality=lossless&width=137&height=133",
     description: "Owner with extensive management capabilities and oversight."
   },
   {
     id: 3,
     name: "Samuel",
     role: "Management",
-    avatar: "https://media.discordapp.net/attachments/1239804414315859989/1345835641858166804/image.png?ex=67c5fe9d&is=67c4ad1d&hm=9902b1dc0167fe819d889cd4371da96436f0835cbf9eb7b6410f35add2a3fc99&=&format=webp&quality=lossless&width=428&height=383",
+    avatar: "https://media.discordapp.net/attachments/1239804414315859989/1345835641858166804/image.png?ex=67d1335d&is=67cfe1dd&hm=1858da75637c213c8cd3c86002de50f40e0c48f88daf8fc61d818743d894b59d&=&format=webp&quality=lossless&width=428&height=383",
     description: "Management team ensuring smooth operations and player engagement."
   },
   {

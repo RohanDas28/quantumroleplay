@@ -144,7 +144,59 @@ const membershipTiers = [
       "Exclusive Discord Role"
     ],
     recommended: false
-  }
+  },
+  {
+    id: "gang",
+    title: "Gang Perk",
+    price: "499",
+    period: "custom",
+    category: "Streamer",
+    description: "Special perks Gangs/ Crews",
+    color: "red",
+    features: [
+      "1x Custom Gang Livery",
+      "1x Custom Gang Clothing",
+    ],
+    recommended: false,
+    special: true
+  },
+  {
+    id: "gang",
+    title: "Elite Gang Perk",
+    price: "999",
+    period: "custom",
+    category: "Streamer",
+    description: "Special perks Gangs/ Crews",
+    color: "red",
+    features: [
+      "1x Custom Gang Livery",
+      "1x Custom Gang Clothing",
+      "Gang Jobs",
+      "Custom Gang Territory",
+      "Gang Traphouse",
+      "Gang Bossmenu/ Boss Stash"
+    ],
+    recommended: false,
+    special: true
+  },
+  {
+    id: "streamer",
+    title: "Addon Perk",
+    price: "Streamer",
+    period: "custom",
+    category: "Streamer",
+    description: "Special perks for content creators",
+    color: "red",
+    features: [
+      "1x Tier 1 EDM",
+      "50k In Game Money",
+      "Discord Role (Notify)",
+      "Level 4 Queue Priority",
+      "Stream Promotion on Discord"
+    ],
+    recommended: false,
+    special: true
+  },
 ];
 
 const Memberships = () => {
@@ -186,6 +238,17 @@ const Memberships = () => {
           shadow: '0 0 15px rgba(177, 78, 255, 0.3)',
           buttonText: 'text-white'
         };
+      case 'red':
+        return {
+          primary: '#FF0000',
+          hover: '#E00000',
+          border: 'border-[#FF0000]/30',
+          text: 'text-[#FF0000]',
+          bgGradient: 'from-[#FF0000]/20 to-transparent',
+          shadow: '0 0 15px rgba(255, 0, 0, 0.3)',
+          buttonText: 'text-white'
+        };
+
       default: // blue
         return {
           primary: '#00F0FF',
@@ -198,6 +261,7 @@ const Memberships = () => {
         };
     }
   };
+
   // Default color for most elements
   const mainColor = getColorValues('blue');
   const accentColor = getColorValues('purple');
