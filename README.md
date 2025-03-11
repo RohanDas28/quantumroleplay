@@ -1,69 +1,32 @@
-# Welcome to your Lovable project
+# Quantum Roleplay - Official Website
 
-## Project info
+Welcome to the official website of **Quantum Roleplay**!
 
-**URL**: https://lovable.dev/projects/a2e4350e-b10f-422f-92f0-425366a02bbb
+## 🚀 About Quantum Roleplay
+Quantum Roleplay is an immersive and dynamic FiveM roleplay server that brings a unique and engaging experience to every player. Whether you're a seasoned roleplayer or a newcomer, our server offers rich storytelling, deep character development, and a thriving community to be a part of.
 
-## How can I edit this code?
+🌍 **Server Website:** [Quantum Roleplay](https://quantumroleplay.vercel.app/)  
+💬 **Join Our Discord:** [discord.gg/quantumrp](https://discord.gg/quantumrp)
 
-There are several ways of editing your application.
+## 🌟 Features
+- **Realistic & Custom Roleplay Mechanics**
+- **Active and Engaged Staff Team**
+- **Custom Jobs, Gangs & Businesses**
+- **Legal and Illegal Roleplay Opportunities**
+- **Immersive Economy & Housing System**
+- **Frequent Updates & Community-Driven Improvements**
+- **Serious RP with Fair and Balanced Rules**
 
-**Use Lovable**
+## 🎮 How to Join
+1. Join our Discord server: [discord.gg/quantumrp](https://discord.gg/quantumrp)
+2. Read and understand the server rules.
+3. Connect via FiveM and start your journey!
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/a2e4350e-b10f-422f-92f0-425366a02bbb) and start prompting.
+## 📜 Community & Rules
+Quantum RP enforces fair and engaging roleplay. We expect all players to adhere to the server rules to maintain a high-quality RP experience.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📌 Connect With Us
+Stay updated with server events, development updates, and roleplay highlights by joining our community on Discord. We are always open to feedback and suggestions!
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/a2e4350e-b10f-422f-92f0-425366a02bbb) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+---
+Join **Quantum Roleplay** today and be part of an ever-evolving RP world! 🌟
